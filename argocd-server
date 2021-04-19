@@ -27,7 +27,7 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   rules:
-  - host: argocd.cloudkumar.site(Your Domain Name)        
+  - host: argocd.harecloud.xyz      
     http:
       paths:
       - path: /
@@ -36,7 +36,7 @@ spec:
           servicePort: https
   tls:
   - hosts:
-      - argocd.cloudkumar.site(Your Domain Name)  
+      - argocd.harecloud.xyz 
     secretName: argocd-secret
 
 5. kubectl apply -f argocd-ingress.yaml -n argocd
